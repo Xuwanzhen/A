@@ -1,0 +1,16 @@
+.lists li {
+  height: 4rem;
+  border-bottom: 1px solid gray; }
+  .lists li p {
+    line-height: 2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+    .lists li p .title1, .lists li p .title2 {
+      font-weight: bold; }
+    .lists li p .content1, .lists li p .content2 {
+      color: gray; }
+    .lists li p .btn1 {
+      float: right;
+      margin-right: 1rem;
+      margin-top: 0.5rem; }

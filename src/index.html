@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<script type="text/javascript" src="app/common/js/angular.min.js"></script>
+		<script type="text/javascript" src="app/common/js/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="app/common/js/angular-css.min.js"></script>
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/pages/one/one.js"></script>
+		<script type="text/javascript" src="app/pages/two/two.js"></script>
+		<link rel="stylesheet" type="text/css" href="app/common/css/index.css">
+</head>
+<body ng-app="myApp">
+	<div class="box">
+		<h3>张三的博客</h3>
+		<div ui-view class="show"></div>
+		<ul class="index-ul">
+			<li ui-sref="one">博客列表</li>
+			<li ui-sref="two">写新博客</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.twoBox {
+  margin-left: 1rem; }
+  .twoBox .twoTitle {
+    line-height: 3rem; }
+    .twoBox .twoTitle span {
+      font-size: 1rem;
+      font-weight: bold; }
+  .twoBox .twoContent span {
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    float: left; }

@@ -1,0 +1,53 @@
+@mixin baseStyle($w:auto, $h:auto, $bgc:auto,$s:0.5rem, $lh:1rem, $f:'微软雅黑',$c:auto){
+	width: $w;
+	height: $h;
+	background: $bgc;
+	margin: 0 auto;
+	font-size:$s;
+	line-height:$lh;
+	font-family:$f;
+	color:$c;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 10px;
+}
+a{
+	text-decoration: none;
+}
+ul,li,ol,dl,dd,dt{
+	list-style: none;
+}
+.btn{
+
+		position: absolute;
+		right: 5rem;
+		top: 0.5rem
+}
+.box{
+	@include baseStyle($w:50rem, $h:35rem);
+	border: 1px solid red;
+	position: relative;
+	h3{
+		text-align: center;
+		line-height: 2rem;
+	}
+	.show{
+		@include baseStyle($w:45rem, $h:30rem);
+		border: 1px solid red;
+		overflow: hidden;
+	}
+	ul{
+		@include baseStyle($w:12rem, $h:3rem);
+		margin-top: 1rem;
+		li{
+			float: left;
+			margin:0 1rem;
+		}
+	}
+}

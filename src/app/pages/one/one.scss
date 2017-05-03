@@ -1,0 +1,24 @@
+
+.lists{
+	li{
+		height: 4rem;
+		border-bottom: 1px solid gray;
+		p{
+			line-height: 2rem;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			.title1,.title2{
+				font-weight: bold;
+			}
+			.content1,.content2{
+				color: gray
+			}
+			.btn1{
+				float: right;
+				margin-right: 1rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+}

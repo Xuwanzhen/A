@@ -1,0 +1,8 @@
+<input type="button" class="btn" ng-click="indexflag()" ng-model="indextext" value="编辑" ng-show="flag11">
+<input type="button" class="btn" ng-click="indexflag1()" ng-model="indextext" value="完成" ng-hide="flag11">
+<ol class="lists">
+	<li ng-repeat="x in dataArr">
+		<p><span class="title1">标题：</span><span class="title2">{{x.title}}</span><input type="button" class="btn1" ng-click="delete($index)" ng-show="flag" value="删除此条博客"></p>
+		<p><span class="content1">内容：</span><span class="content2">{{x.content}}</span></p>
+	</li>
+</ol>4
